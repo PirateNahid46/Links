@@ -1,0 +1,17 @@
+.messages{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.my{
+    color: rgb(0, 255, 13);
+    font-size: 20px;
+    font-weight: 500;
+    font-family:'Times New Roman', Times, serif;
+}
+a{
+    color: #00ff00;
+    text-decoration: none;
+}
