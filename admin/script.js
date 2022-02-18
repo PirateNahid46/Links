@@ -19,20 +19,29 @@ const firebaseConfig = {
     const username = name.value;
     const message = chatTxt.value;
     const timestamp = Date.now();
+  name.value = "";
   chatTxt.value = "";
   db.ref("links/" + timestamp).set({
     usr: username,
     msg: message,
+    time: timestamp,
   });
     
     
   }
+
+  function del(t56){
+    db.ref("links/" + t56).remove();
+    alert("Link deleted");
+    
+  }
+  
 
 
 
 const fetchChat = db.ref("links/");
 fetchChat.on("child_added", function (snapshot) {
   const messages = snapshot.val();
-    const msg = "<div class=\"my\"> <a href=\""+ messages.msg +"\"> "+ messages.usr + " <a/></div>";
+    const msg = "<div class=\"my\"> <a href=\""+ messages.msg +"\"> "+ messages.usr + " " + messages.time +" <a/><button onclick=\"del("+ messages.time +")\"> X </button> </div>";
     document.getElementById("messages").innerHTML += msg;
 });

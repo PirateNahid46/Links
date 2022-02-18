@@ -2,43 +2,30 @@
     color: #ffffff;
     font-size: 20px;
     font-weight: 500;
-    font-family: Garamond, monospace, courier;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .my{
     color: rgb(0, 255, 13);
     font-size: 20px;
     font-weight: 500;
-    font-family: Garamond, monospace, courier;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
 }
 .textbox{
-    background: #000;
-    border: none;
-    color: #fff;
-    font-family:Garamond, monospace, courier;
+    font-family:'Times New Roman', Times, serif;
     font-size: 20px;
-    width: 100%;
-    font-weight: 500;
-    
-}
-.textbox:focus{
-    border: none;
-    outline: none;
+    width: 50%;
+    font-weight: 500;    
 }
 .sub{
-    visibility:hidden;
+    background-color: #00ff00;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20 px;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
 }
-.auth{
-    color: #fff;
-    font-family:Garamond, monospace, courier;
+.bFont{
     font-size: 20px;
-    font-weight: 500;
-    visibility: visible;
-}
-.bottom{
-    color: #fff;
-    font-family:Garamond, monospace, courier;
-    font-size: 20px;
-    font-weight: 500;
-    visibility: hidden;
 }
